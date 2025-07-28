@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ${APP_NAME:bdev-baas-template}
+  profiles:
+    active: dev
+
+server:
+  port: ${PORT:8080}
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: "" # Set to empty string to disable Zipkin tracing
