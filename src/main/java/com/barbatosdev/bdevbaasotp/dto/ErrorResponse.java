@@ -5,7 +5,7 @@
  * Author: Esteban Lillo <barbatosdev@gmail.com>
  * Created on 04-07-2025
  */
-package com.barbatosdev.bdevbaastemplate.dto;
+package com.barbatosdev.bdevbaasotp.dto;
 
 
 import lombok.AllArgsConstructor;

@@ -5,9 +5,9 @@
  * Author: Esteban Lillo <barbatosdev@gmail.com>
  * Created on 04-07-2025
  */
-package com.barbatosdev.bdevbaastemplate.exception;
+package com.barbatosdev.bdevbaasotp.exception;
 
-import com.barbatosdev.bdevbaastemplate.Enum.ErrorCode;
+import com.barbatosdev.bdevbaasotp.Enum.ErrorCode;
 import lombok.Getter;
 import org.springframework.web.bind.annotation.ResponseStatus;
 

@@ -5,7 +5,7 @@
  * Author: Esteban Lillo <barbatosdev@gmail.com>
  * Created on 04-07-2025
  */
-package com.barbatosdev.bdevbaastemplate.aop;
+package com.barbatosdev.bdevbaasotp.aop;
 
 
 import lombok.extern.slf4j.Slf4j;

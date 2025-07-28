@@ -5,10 +5,10 @@
  * Author: Esteban Lillo <barbatosdev@gmail.com>
  * Created on 04-07-2025
  */
-package com.barbatosdev.bdevbaastemplate.exception;
+package com.barbatosdev.bdevbaasotp.exception;
 
-import com.barbatosdev.bdevbaastemplate.Enum.ErrorCode;
-import com.barbatosdev.bdevbaastemplate.dto.ErrorResponse;
+import com.barbatosdev.bdevbaasotp.Enum.ErrorCode;
+import com.barbatosdev.bdevbaasotp.dto.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

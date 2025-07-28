@@ -1,4 +1,4 @@
-package com.barbatosdev.bdevbaastemplate.config;
+package com.barbatosdev.bdevbaasotp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
