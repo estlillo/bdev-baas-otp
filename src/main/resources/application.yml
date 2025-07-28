@@ -3,9 +3,18 @@ spring:
     name: ${APP_NAME:bdev-baas-otp}
   profiles:
     active: dev
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${AUTH_SERVICE_URL:http://localhost:8081}/.well-known/jwks.json
 
 server:
   port: ${PORT:8080}
+
+user:
+  service:
+    url: ${USER_SERVICE_URL:http://localhost:8280}
 
 management:
   tracing:

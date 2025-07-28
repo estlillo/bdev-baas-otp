@@ -18,6 +18,10 @@ import org.springframework.http.HttpStatus;
 @Getter
 public enum ErrorCode {
     UNKNOWN_ERROR("GEN_100", "Unexpected error occurred", HttpStatus.INTERNAL_SERVER_ERROR),
+    SERVICE_UNAVAILABLE("ERR_403", "Unavailable service", HttpStatus.SERVICE_UNAVAILABLE),
+    INVALID_CREDENTIALS("AUTH_001", "Authentication failed", HttpStatus.UNAUTHORIZED),
+    OTP_ALREADY_ENABLED("ERR_405", "OTP is already enabled for this user", HttpStatus.BAD_REQUEST),
+    OTP_NOT_ENABLED("ERR_406", "OTP is not enabled for this user", HttpStatus.BAD_REQUEST),
     UNAUTHORIZED_ACCESS("ERR_401", "Unauthorized access to the requested resource", HttpStatus.UNAUTHORIZED);
 
     private final String code;
