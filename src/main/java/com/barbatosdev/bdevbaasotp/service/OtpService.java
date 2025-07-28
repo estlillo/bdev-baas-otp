@@ -1,21 +1,11 @@
-/*
- * Copyright (c) 2025 barbatos-dev
- * All rights reserved.
- *
- * Author: Esteban Lillo <barbatosdev@gmail.com>
- * Created on 19-07-2025
- */
 package com.barbatosdev.bdevbaasotp.service;
 
+import com.barbatosdev.bdevbaasotp.dto.ValidateOtpRequest;
 
-/**
- * @author Esteban Lillo
- * @since 19-07-2025
- */
 public interface OtpService {
-    String generateSecret();
+    String getOtpUrl(String currentUserId);
 
-    String generateOtpAuthUrl(String username, String issuer, String secret);
+    void confirmOtp(String currentUserId, String otpCode);
 
-    boolean validateCode(String secret, String code);
+    boolean validateOtp(ValidateOtpRequest request);
 }

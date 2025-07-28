@@ -22,6 +22,7 @@ public enum ErrorCode {
     INVALID_CREDENTIALS("AUTH_001", "Authentication failed", HttpStatus.UNAUTHORIZED),
     OTP_ALREADY_ENABLED("ERR_405", "OTP is already enabled for this user", HttpStatus.BAD_REQUEST),
     OTP_NOT_ENABLED("ERR_406", "OTP is not enabled for this user", HttpStatus.BAD_REQUEST),
+    OTP_CODE_INVALID("ERR_407", "Invalid OTP code provided", HttpStatus.BAD_REQUEST),
     UNAUTHORIZED_ACCESS("ERR_401", "Unauthorized access to the requested resource", HttpStatus.UNAUTHORIZED);
 
     private final String code;
